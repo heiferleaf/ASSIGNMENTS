@@ -19,7 +19,7 @@ namespace HW2.GetPrimeFactors
             List<int> factors = new List<int>();
             for (int i = 2; i <= number; i++)
             {
-                while (number % i == 0 && IsPrime(i))
+                while (number % i == 0)
                 {
                     if (!factors.Contains(i))
                         factors.Add(i);
@@ -27,16 +27,6 @@ namespace HW2.GetPrimeFactors
                 }
             }
             return factors;
-        }
-
-        static bool IsPrime(int num)
-        {
-            if (num <= 1) return false;
-            for (int i = 2; i * i <= num; i++)
-            {
-                if (num % i == 0) return false;
-            }
-            return true;
         }
     }
 }
