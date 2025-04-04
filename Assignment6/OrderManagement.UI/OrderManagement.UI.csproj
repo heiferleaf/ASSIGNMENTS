@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\OrderManagement.Core\OrderManagement.Core.csproj" />
+    <ProjectReference Include="..\OrderManagement.Core\OrderManagement.Core.csproj" />
   </ItemGroup>
 
 </Project>
